@@ -1,0 +1,504 @@
+/* Student Fees Container */
+.student-fees-container {
+  min-height: 100vh;
+  background-color: #f5f7f9;
+}
+
+/* Header Styles */
+.sf-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sf-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sf-header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sf-logo {
+  font-size: 2rem;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
+.sf-header-text h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.sf-header-text p {
+  margin: 0;
+  opacity: 0.9;
+  font-size: 0.9rem;
+}
+
+.sf-add-btn {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.sf-add-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Main Content */
+.sf-main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Stats Grid */
+.sf-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.sf-stat-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sf-stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.sf-stat-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sf-stat-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.sf-stat-text p {
+  margin: 0;
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.sf-stat-text h3 {
+  margin: 0.25rem 0 0 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Color classes for icons */
+.bg-blue { background: linear-gradient(135deg, #4e73df 0%, #224abe 100%); }
+.bg-green { background: linear-gradient(135deg, #1cc88a 0%, #13855c 100%); }
+.bg-red { background: linear-gradient(135deg, #e74a3b 0%, #be2617 100%); }
+.bg-purple { background: linear-gradient(135deg, #6f42c1 0%, #4e2d8c 100%); }
+.bg-orange { background: linear-gradient(135deg, #fd7e14 0%, #c35a02 100%); }
+
+/* Table Container */
+.sf-table-container {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.sf-table-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid #e3e6f0;
+}
+
+.sf-table-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #4e73df;
+}
+
+.sf-table-wrapper {
+  overflow-x: auto;
+}
+
+.sf-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.sf-table th {
+  background-color: #f8f9fc;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #6e707e;
+  border-bottom: 1px solid #e3e6f0;
+}
+
+.sf-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #e3e6f0;
+}
+
+.sf-table tr:last-child td {
+  border-bottom: none;
+}
+
+.sf-table tr:hover {
+  background-color: #f8f9fc;
+}
+
+/* Student Info */
+.sf-student-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.sf-student-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f8f9fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4e73df;
+}
+
+.sf-student-name {
+  font-weight: 500;
+  color: #4e73df;
+}
+
+.sf-student-details {
+  font-size: 0.8rem;
+  color: #858796;
+}
+
+/* Course Info */
+.sf-course-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.sf-course-name {
+  font-weight: 500;
+}
+
+/* Amount */
+.sf-amount {
+  font-weight: 600;
+  color: #4e73df;
+}
+
+/* Badges */
+.sf-badge {
+  padding: 0.35rem 0.75rem;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.sf-badge-green {
+  background: #e6f4ee;
+  color: #1cc88a;
+}
+
+.sf-badge-orange {
+  background: #fef3e8;
+  color: #fd7e14;
+}
+
+.sf-badge-red {
+  background: #fbeaea;
+  color: #e74a3b;
+}
+
+.sf-badge-gray {
+  background: #f8f9fc;
+  color: #858796;
+}
+
+/* Actions */
+.sf-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.sf-action-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sf-action-btn:hover {
+  transform: scale(1.1);
+}
+
+.sf-action-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.text-blue { background: #e8f0fe; color: #4e73df; }
+.text-green { background: #e6f4ee; color: #1cc88a; }
+.text-red { background: #fbeaea; color: #e74a3b; }
+
+/* Modal Styles */
+.sf-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.sf-modal {
+  background: white;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.sf-modal-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid #e3e6f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sf-modal-header h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #4e73df;
+}
+
+.sf-modal-close {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  color: #858796;
+  transition: color 0.3s ease;
+}
+
+.sf-modal-close:hover {
+  color: #4e73df;
+}
+
+.sf-modal-form {
+  padding: 1.5rem;
+}
+
+.sf-form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.sf-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sf-form-group label {
+  font-weight: 500;
+  color: #4e73df;
+}
+
+.sf-form-group input,
+.sf-form-group select {
+  padding: 0.75rem;
+  border: 1px solid #d1d3e2;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.sf-form-group input:focus,
+.sf-form-group select:focus {
+  outline: none;
+  border-color: #4e73df;
+  box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25);
+}
+
+.sf-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e3e6f0;
+}
+
+.sf-cancel-btn {
+  padding: 0.75rem 1.5rem;
+  border: 1px solid #d1d3e2;
+  background: white;
+  border-radius: 6px;
+  color: #858796;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.sf-cancel-btn:hover {
+  background: #f8f9fc;
+}
+
+.sf-save-btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background: #4e73df;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.sf-save-btn:hover {
+  background: #2e59d9;
+}
+
+/* View Modal */
+.sf-view-modal {
+  max-width: 800px;
+}
+
+.sf-view-content {
+  padding: 1.5rem;
+}
+
+.sf-view-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.sf-info-box {
+  background: #f8f9fc;
+  border-radius: 8px;
+  padding: 1.25rem;
+}
+
+.sf-info-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 0 0 0.75rem 0;
+  color: #4e73df;
+}
+
+.sf-info-box p {
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sf-info-box strong {
+  color: #4e73df;
+}
+
+/* Payments Table */
+.sf-payments-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.sf-payments-table th,
+.sf-payments-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #e3e6f0;
+}
+
+.sf-payments-table th {
+  background: #f8f9fc;
+  font-weight: 600;
+  color: #4e73df;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sf-header-content {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .sf-header-left {
+    flex-direction: column;
+  }
+  
+  .sf-stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .sf-view-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .sf-table-header {
+    text-align: center;
+  }
+}

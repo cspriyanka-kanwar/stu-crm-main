@@ -1,0 +1,266 @@
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow: auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+  padding: 15px 20px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header h3 {
+  margin: 0;
+  color: #1e3c72;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #999;
+}
+
+.close-btn:hover {
+  color: #333;
+}
+
+.modal-body {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.modal-footer {
+  padding: 15px 20px;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-print {
+  background: #1e3c72;
+  color: white;
+}
+
+.btn-print:hover {
+  background: #2a5298;
+}
+
+.btn-download {
+  background: #28a745;
+  color: white;
+}
+
+.btn-download:hover {
+  background: #218838;
+}
+
+.btn-close {
+  background: #6c757d;
+  color: white;
+}
+
+.btn-close:hover {
+  background: #5a6268;
+}
+
+/* ID Card Styles */
+.id-card {
+  width: 280px;
+  height: 420px;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+.id-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-header {
+  background: rgba(255,255,255,0.95);
+  padding: 15px;
+  text-align: center;
+  border-bottom: 3px solid #1e3c72;
+}
+
+.college-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #1e3c72;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.id-subtitle {
+  font-size: 12px;
+  color: #666;
+  margin: 5px 0 0 0;
+  font-weight: 600;
+}
+
+.card-body {
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.student-photo {
+  width: 120px;
+  height: 140px;
+  background: linear-gradient(45deg, #f0f0f0, #e0e0e0);
+  border: 3px solid #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px auto;
+  overflow: hidden;
+}
+
+.student-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.student-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 15px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  border-bottom: 2px solid rgba(255,255,255,0.3);
+  padding-bottom: 10px;
+}
+
+.info-section {
+  text-align: left;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.info-row {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: flex-start;
+  padding: 3px 0;
+}
+
+.info-label {
+  font-weight: bold;
+  min-width: 70px;
+  color: #b8d4ff;
+  font-size: 12px;
+}
+
+.info-value {
+  color: white;
+  flex: 1;
+  font-size: 12px;
+}
+
+.card-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255,255,255,0.1);
+  padding: 8px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
+  color: #b8d4ff;
+}
+
+.validity {
+  font-weight: bold;
+}
+
+.card-pattern {
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 200px;
+  height: 200px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 50%;
+}
+
+.card-pattern::before {
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 120px;
+  height: 120px;
+  background: rgba(255,255,255,0.03);
+  border-radius: 50%;
+}
+
+.college-logo {
+  width: 180px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px auto;
+}
+
+/* Print Styles */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #id-card-to-print, #id-card-to-print * {
+    visibility: visible;
+  }
+  #id-card-to-print {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

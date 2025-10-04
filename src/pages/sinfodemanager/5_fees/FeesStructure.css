@@ -1,0 +1,766 @@
+/* FeesStructure.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+.fees-structure-container {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fafb;
+  min-height: 100vh;
+}
+
+/* Header Styles */
+.fs-header {
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.fs-header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+
+.fs-header-left {
+  display: flex;
+  align-items: center;
+}
+
+.fs-logo {
+  width: 2rem;
+  height: 2rem;
+  background-color: #3b82f6;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.875rem;
+}
+
+.fs-header-text {
+  margin-left: 1rem;
+}
+
+.fs-header-text h1 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.fs-header-text p {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.fs-add-btn {
+  background-color: #3b82f6;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+.fs-add-btn:hover {
+  background-color: #2563eb;
+}
+
+/* Main Content */
+.fs-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Stats Grid */
+.fs-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .fs-stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.fs-stat-card {
+  background-color: white;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f3f4f6;
+}
+
+.fs-stat-content {
+  display: flex;
+  align-items: center;
+}
+
+.fs-stat-icon {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.fs-stat-icon.bg-blue {
+  background-color: #dbeafe;
+  color: #2563eb;
+}
+
+.fs-stat-icon.bg-green {
+  background-color: #dcfce7;
+  color: #16a34a;
+}
+
+.fs-stat-icon.bg-orange {
+  background-color: #ffedd5;
+  color: #ea580c;
+}
+
+.fs-stat-icon.bg-purple {
+  background-color: #f3e8ff;
+  color: #7c3aed;
+}
+
+.fs-stat-text {
+  margin-left: 1rem;
+}
+
+.fs-stat-text p {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.fs-stat-text h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* Table Container */
+.fs-table-container {
+  background-color: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f3f4f6;
+  overflow: hidden;
+}
+
+.fs-table-header {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.fs-table-header h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.fs-table-wrapper {
+  overflow-x: auto;
+}
+
+.fs-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.fs-table th {
+  background-color: #f9fafb;
+  padding: 0.75rem 1.5rem;
+  text-align: left;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.fs-table td {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.fs-course-info {
+  display: flex;
+  align-items: center;
+}
+
+.fs-course-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+  background-color: #dbeafe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3b82f6;
+  font-size: 0.875rem;
+}
+
+.fs-course-name {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #111827;
+  margin-left: 1rem;
+}
+
+.fs-course-details {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-left: 1rem;
+}
+
+.fs-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.625rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.fs-badge-blue {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.fs-badge-green {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.fs-badge-orange {
+  background-color: #ffedd5;
+  color: #9a3412;
+}
+
+.fs-amount {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #111827;
+}
+
+.fs-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.fs-action-btn {
+  padding: 0.25rem;
+  border-radius: 0.375rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.fs-action-btn.text-blue {
+  color: #2563eb;
+}
+
+.fs-action-btn.text-blue:hover {
+  color: #1e40af;
+}
+
+.fs-action-btn.text-green {
+  color: #16a34a;
+}
+
+.fs-action-btn.text-green:hover {
+  color: #166534;
+}
+
+.fs-action-btn.text-red {
+  color: #dc2626;
+}
+
+.fs-action-btn.text-red:hover {
+  color: #b91c1c;
+}
+
+/* Modal Styles */
+.fs-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  padding: 1rem;
+}
+
+.fs-modal {
+  background-color: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  max-width: 42rem;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  animation: fs-fadeIn 0.3s ease-in;
+}
+
+@keyframes fs-fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(0.625rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fs-modal-header {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fs-modal-header h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.fs-modal-close {
+  color: #9ca3af;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.fs-modal-close:hover {
+  color: #6b7280;
+}
+
+.fs-modal-form {
+  padding: 1.5rem;
+}
+
+.fs-form-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .fs-form-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.fs-form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.fs-form-group label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+.fs-form-group select,
+.fs-form-group input {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.fs-form-group select:focus,
+.fs-form-group input:focus {
+  outline: none;
+  ring: 2px;
+  ring-color: #3b82f6;
+  border-color: transparent;
+}
+
+.fs-installment-section {
+  margin-bottom: 1.5rem;
+}
+
+.fs-due-dates {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.fs-due-date-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.fs-due-date-input label {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-bottom: 0.25rem;
+}
+
+.fs-modal-actions {
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+
+.fs-cancel-btn {
+  padding: 0.5rem 1rem;
+  color: #374151;
+  background-color: #f3f4f6;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.fs-cancel-btn:hover {
+  background-color: #e5e7eb;
+}
+
+.fs-save-btn {
+  padding: 0.5rem 1rem;
+  color: white;
+  background-color: #3b82f6;
+  border: none;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.fs-save-btn:hover {
+  background-color: #2563eb;
+}
+
+/* View Modal Styles */
+.fs-view-content {
+  padding: 1.5rem;
+}
+
+.fs-view-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .fs-view-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.fs-view-content h4 {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+
+.fs-info-box {
+  background-color: #f9fafb;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.fs-info-title {
+  font-weight: 500;
+  color: #111827;
+  margin-bottom: 0.25rem;
+}
+
+.fs-info-box p {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 0.25rem;
+}
+
+.fs-installment-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .fs-installment-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.fs-installment-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.fs-meta-info {
+  font-size: 0.75rem;
+  color: #6b7280;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.fs-meta-info p {
+  margin-bottom: 0.25rem;
+}
+
+/* Add these styles to your existing FeesStructure.css */
+
+.fs-coupon-section {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.fs-coupon-select {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.fs-apply-coupon-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.fs-apply-coupon-btn:hover {
+  background-color: #45a049;
+}
+
+.fs-final-fee {
+  margin-top: 8px;
+  padding: 8px;
+  background-color: #f0f9ff;
+  border-left: 4px solid #2196F3;
+  font-weight: bold;
+}
+
+.fs-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.fs-action-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px 8px;
+}
+
+.text-blue { color: #2196F3; }
+.text-green { color: #4CAF50; }
+.text-red { color: #F44336; }
+
+.fs-installments-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.fs-installments-table th,
+.fs-installments-table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.fs-installments-table th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+/* Reminder Button */
+.reminder-btn {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: #212529;
+  margin: 0 5px;
+}
+
+.reminder-btn:hover {
+  background-color: #e0a800;
+  border-color: #d39e00;
+  color: #212529;
+}
+
+/* Reminder Modal */
+.reminder-modal {
+  max-width: 700px;
+}
+
+.reminder-content {
+  padding: 20px;
+}
+
+.timing-selection {
+  margin-bottom: 25px;
+}
+
+.timing-selection h4 {
+  margin-bottom: 15px;
+  color: #495057;
+  font-weight: 600;
+}
+
+.timing-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.timing-option {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.timing-option:hover {
+  border-color: #007bff;
+  background-color: #f8f9fa;
+}
+
+.timing-option input[type="radio"] {
+  margin-right: 10px;
+}
+
+.timing-label {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.timing-label i {
+  margin-right: 8px;
+  font-size: 16px;
+  color: #6c757d;
+}
+
+.timing-option input[type="radio"]:checked + .timing-label i {
+  color: #007bff;
+}
+
+/* Pending Installments */
+.pending-installments h4 {
+  margin-bottom: 15px;
+  color: #495057;
+  font-weight: 600;
+}
+
+.no-installments {
+  text-align: center;
+  padding: 20px;
+  color: #6c757d;
+  font-style: italic;
+}
+
+.installments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.installment-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+}
+
+.installment-info {
+  flex: 1;
+}
+
+.installment-number {
+  font-weight: 600;
+  color: #495057;
+  margin-bottom: 5px;
+}
+
+.installment-details {
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+}
+
+.installment-details .amount {
+  color: #dc3545;
+  font-weight: 500;
+}
+
+.installment-details .due-date {
+  color: #6c757d;
+}
+
+.send-reminder-btn {
+  white-space: nowrap;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .installment-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .send-reminder-btn {
+    align-self: flex-end;
+  }
+  
+  .timing-options {
+    gap: 8px;
+  }
+  
+  .timing-option {
+    padding: 10px;
+  }
+}
